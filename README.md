@@ -4,9 +4,11 @@ Custom Component for Home Assistant that reads a list of files from a directory 
 This was developed for use alongside the [Gallery Card](https://github.com/TarheelGrad1998/gallery-card) but may have other uses.
 
 ## Installation
+[![hacs_badge](https://img.shields.io/badge/HACS-Custom-orange.svg)](https://github.com/custom-components/hacs)
 
 Files must be in the WWW folder, ideally in a subfolder. This component will periodically scan the folder for changes to the files, and is based on the built-in Folder component.
 
+The component can be installed from HACS, but follow the below instructions to install manually.
 1. Create a folder in your `config` directory named `custom_components`
 2. Create a folder in your `custom_components` named `files`
 3. Copy the 3 files (_init_.py, manifest.json, and sensor.py) into the `files` folder
