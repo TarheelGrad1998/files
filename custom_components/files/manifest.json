@@ -1,8 +1,10 @@
 {
     "domain": "files",
     "name": "Files in a Folder",
-    "documentation": "https://www.example.com",
+    "documentation": "https://github.com/TarheelGrad1998/files",
+    "issue_tracker": "https://github.com/TarheelGrad1998/files/issues",
     "dependencies": [],
     "codeowners": [],
-    "requirements": []
+    "requirements": [],
+    "codeowners": ["@TarheelGrad1998"]
   }
