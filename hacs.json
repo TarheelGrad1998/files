@@ -1,0 +1,5 @@
+{
+    "name": "Files Component",
+    "domains": ["sensor"],
+    "iot_class": "Local Polling"
+  }
