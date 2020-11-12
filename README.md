@@ -35,7 +35,7 @@ The component can be installed from HACS, but follow the below instructions to i
 | folder | string | **Required** | Folder to scan, must be /config/www/***
 | name | string | **Required** | The entity ID for the sensor
 | sort | string | **Optional** | One of 'name', 'date', or 'size';  Determines how files are sorted in the Gallery, `Default: date`
-| recursive | boolean | **Optional** | True or False; If True, the pattern filter “**” will match any files and zero or more directories, subdirectories and symbolic links to directories. , `Default: False`
+| recursive | boolean | **Optional** | True or False; If True, the pattern filter `**` will match any files and zero or more directories, subdirectories and symbolic links to directories. **Note:** Using the `**` pattern in large directory trees may consume an inordinate amount of time , `Default: False` 
 
 ## Credits
 
