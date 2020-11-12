@@ -37,11 +37,11 @@ def get_files_list(folder_path, filter_term, sort, recursive):
     query = folder_path + filter_term
     """files_list = glob.glob(query)"""
     if sort == 'name':
-        files_list = sorted(glob.glob(query, recursive))
+        files_list = sorted(glob.glob(query, recursive=recursive))
     elif sort == 'size':
-        files_list = sorted(glob.glob(query, recursive), key=os.path.getsize)
+        files_list = sorted(glob.glob(query, recursive=recursive), key=os.path.getsize)
     else:
-        files_list = sorted(glob.glob(query, recursive), key=os.path.getmtime)
+        files_list = sorted(glob.glob(query, recursive=recursive), key=os.path.getmtime)
     return files_list
 
 
@@ -112,7 +112,7 @@ class FilesSensor(Entity):
             'number_of_files': self._number_of_files,
             'bytes': self._size,
             'fileList': self.fileList,
-            'sort': self._sort
+            'sort': self._sort,
             'recursive': self._recursive
             }
         return attr
