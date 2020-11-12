@@ -21,6 +21,7 @@ The component can be installed from HACS, but follow the below instructions to i
           folder: /config/www/images
           name: gallery_images
           sort: date
+          recursive: True
     ```
 7. Restart Home Assistant
 8. Check the sensor.gallery_images entity to see if the `fileList` attribute lists your files
@@ -33,6 +34,7 @@ The component can be installed from HACS, but follow the below instructions to i
 | folder | string | **Required** | Folder to scan, must be /config/www/***
 | name | string | **Required** | The entity ID for the sensor
 | sort | string | **Optional** | One of 'name', 'date', or 'size';  Determines how files are sorted in the Gallery, `Default: date`
+| recursive | boolean | **Optional** | True or False; Search into subdirectories , `Default: False`
 
 ## Credits
 
