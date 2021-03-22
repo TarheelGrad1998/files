@@ -6,5 +6,6 @@
     "dependencies": [],
     "codeowners": [],
     "requirements": [],
-    "codeowners": ["@TarheelGrad1998"]
+    "codeowners": ["@TarheelGrad1998"],
+    "version": "1.4"
   }
