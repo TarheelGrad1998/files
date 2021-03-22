@@ -8,7 +8,7 @@ This was developed for use alongside the [Gallery Card](https://github.com/Tarhe
 
 Files must be in the WWW folder, ideally in a subfolder. This component will periodically scan the folder for changes to the files, and is based on the built-in Folder component.
 
-The component can be installed from HACS, but follow the below instructions to install manually.
+The component can be installed from HACS (use the Custom Repository option), but follow the below instructions to install manually.
 1. Create a folder in your `config` directory (normally where your configuration.yaml file lives) named `custom_components`
 2. Create a folder in your `custom_components` named `files`
 3. Copy the 3 files (_init_.py, manifest.json, and sensor.py) into the `files` folder
