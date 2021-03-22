@@ -4,7 +4,6 @@
     "documentation": "https://github.com/TarheelGrad1998/files",
     "issue_tracker": "https://github.com/TarheelGrad1998/files/issues",
     "dependencies": [],
-    "codeowners": [],
     "requirements": [],
     "codeowners": ["@TarheelGrad1998"],
     "version": "1.4"
