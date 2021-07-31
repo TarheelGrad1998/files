@@ -43,10 +43,10 @@ The entity will automatically update on a schedule, however, if you need to refr
 
     ```yaml
     action:
-      service: homeassistant.update_entity
-      target:
-        entity_id:
-        - sensor.gallery_images
+      - service: homeassistant.update_entity
+        target:
+          entity_id:
+          - sensor.gallery_images
     ```
 
 ## Credits
