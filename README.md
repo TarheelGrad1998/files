@@ -38,7 +38,6 @@ The component can be installed from HACS (use the Custom Repository option), but
 | recursive | boolean | **Optional** | True or False; If True, the pattern filter `**` will match any files and zero or more directories, subdirectories and symbolic links to directories. **Note:** Using the `**` pattern in large directory trees may consume an inordinate amount of time , `Default: False` 
 
 ## Force Reloading 
-
 The entity will automatically update on a schedule, however, if you need to refresh more often or at some event, you can use the [update_entity service call](https://www.home-assistant.io/integrations/homeassistant/#service-homeassistantupdate_entity).  
     ```yaml
     action:
