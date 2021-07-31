@@ -41,13 +41,12 @@ The component can be installed from HACS (use the Custom Repository option), but
 
 The entity will automatically update on a schedule, however, if you need to refresh more often or at some event, you can use the [update_entity service call](https://www.home-assistant.io/integrations/homeassistant/#service-homeassistantupdate_entity).  
 
-    ```yaml
     action:
       - service: homeassistant.update_entity
         target:
           entity_id:
           - sensor.gallery_images
-    ```
+  
 
 ## Credits
 
