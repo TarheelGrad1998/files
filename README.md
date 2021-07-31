@@ -37,6 +37,17 @@ The component can be installed from HACS (use the Custom Repository option), but
 | sort | string | **Optional** | One of 'name', 'date', or 'size';  Determines how files are sorted in the Gallery, `Default: date`
 | recursive | boolean | **Optional** | True or False; If True, the pattern filter `**` will match any files and zero or more directories, subdirectories and symbolic links to directories. **Note:** Using the `**` pattern in large directory trees may consume an inordinate amount of time , `Default: False` 
 
+## Force Reloading 
+
+The entity will automatically update on a schedule, however, if you need to refresh more often or at some event, you can use the [update_entity service call](https://www.home-assistant.io/integrations/homeassistant/#service-homeassistantupdate_entity).  
+    ```yaml
+    action:
+      service: homeassistant.update_entity
+      target:
+        entity_id:
+        - sensor.gallery_images
+    ```
+
 ## Credits
 
 This component largely created from work done by @zsarnett in [the slideshow card](https://github.com/zsarnett/slideshow-card), from which other inspiration was also taken.  
