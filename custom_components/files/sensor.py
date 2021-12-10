@@ -116,7 +116,7 @@ class FilesSensor(Entity):
         return self.ICON
 
     @property
-    def device_state_attributes(self):
+    def extra_state_attributes(self):
         """Return other details about the sensor state."""
         attr = {
             "path": self._folder_path,
