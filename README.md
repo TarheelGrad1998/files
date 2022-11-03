@@ -12,9 +12,10 @@ The component can be installed from HACS (use the Custom Repository option), but
 1. Create a folder in your `config` directory (normally where your configuration.yaml file lives) named `custom_components`
 2. Create a folder in your `custom_components` named `files`
 3. Copy the 3 files (_init_.py, manifest.json, and sensor.py) into the `files` folder
-4. Create a folder in your `WWW` folder named `images` (or any other name, but be sure to use the proper name below)
-5. Add your images/videos to this folder
-6. Add the files sensor to your configuration.yaml file
+4. Restart Home Assistant
+5. Create a folder in your `WWW` folder named `images` (or any other name, but be sure to use the proper name below)
+6. Add your images/videos to this folder
+7. Add the files sensor to your configuration.yaml file
     ```yaml
     - sensor
         - platform: files
@@ -24,8 +25,8 @@ The component can be installed from HACS (use the Custom Repository option), but
           sort: date
           recursive: True
     ```
-7. Restart Home Assistant
-8. Check the sensor.gallery_images entity to see if the `fileList` attribute lists your files
+8. Restart Home Assistant
+9. Check the sensor.gallery_images entity to see if the `fileList` attribute lists your files
 
 ### Configuration Variables
 
